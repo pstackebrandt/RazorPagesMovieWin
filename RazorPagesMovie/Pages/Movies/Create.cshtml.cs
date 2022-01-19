@@ -28,6 +28,10 @@ namespace RazorPagesMovie.Pages.Movies
         [BindProperty]
         public Movie Movie { get; set; }
 
+        /// <summary>
+        /// Add new movie
+        /// </summary>
+        /// <returns>Redirekt to Movie Index page</returns>
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
